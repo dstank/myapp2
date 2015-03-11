@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+<%= simple_form_for @worker do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :lastname %>
+  <%= f.text_field :occupation %>
+  <%= f.text_field :phone %>
+  <%= f.text_field :references %>
+  <%= f.text_field :descript %>
+
+  <%= f.submit  "create" %>
+<% end %>
+
+
+<%=link_to "lista", workers_path(); %>
+
+</body>
+
+
