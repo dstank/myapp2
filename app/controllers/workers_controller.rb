@@ -5,10 +5,15 @@ class WorkersController < ApplicationController
     def new
 	@worker = Worker.new   
 	end
+	
+
 	 def index
+	  @workers= Worker.all
+	   @testw = Worker.search(params[:search])
 	  end
 
 	def show
+
 	end
 
 	def create
