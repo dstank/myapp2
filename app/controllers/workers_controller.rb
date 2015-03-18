@@ -9,7 +9,7 @@ class WorkersController < ApplicationController
 
 	 def index
 	  @workers= Worker.all
-	   @testw = Worker.search(params[:search])
+	  @testw = Worker.search(params[:search])
 	  end
 
 	def show
@@ -34,4 +34,6 @@ class WorkersController < ApplicationController
  	params.require(:worker).permit(:name, :lastname, :occupation, :phone, :references, :descript)
    end
    
+  
+
 end
